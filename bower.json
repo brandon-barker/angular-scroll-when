@@ -1,0 +1,28 @@
+{
+  "name": "angular-scroll-when",
+  "version": "1.0.0",
+  "authors": [
+    "Brandon Barker <skinty@gmail.com>"
+  ],
+  "description": "A Disqus API wrapper for AngularJS featuring helpful directives for easily adding widgets to your pages",
+  "main": "src/scrollWhen.js",
+  "keywords": [
+    "scroll",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "angular": "latest",
+    "angular-mocks": "latest",
+    "jquery": "latest"
+  }
+}
