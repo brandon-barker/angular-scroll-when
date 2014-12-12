@@ -1,7 +1,7 @@
 {
   "name": "angular-scroll-when",
-  "version": "0.1.2",
-  "description": "angular-disqus-api",
+  "version": "1.0.1",
+  "description": "An Angular directive to dynamically scroll to any element on your page",
   "keywords": [
     "angular",
 	  "scroll"

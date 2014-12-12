@@ -3,12 +3,11 @@
 
   angular.module('bb.scrollWhen', []);
 
-  /*
-   * Recent Comments Directive
-   */
   angular.module('bb.scrollWhen').directive('scrollWhen', scrollWhen);
 
-  function scrollWhen() {
+  scrollWhen.$inject = ['$timeout'];
+
+  function scrollWhen($timeout) {
     return {
       restrict: 'A',
       link: function (scope, element, attrs) {
