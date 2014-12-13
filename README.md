@@ -81,3 +81,4 @@ If your element is inside a container with an `overflow` property, then set your
   ...
 </tr>
 ```
+> You can see an exmaple of this in the live demo
