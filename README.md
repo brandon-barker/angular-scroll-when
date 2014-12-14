@@ -1,5 +1,7 @@
-angular-scroll-when [![Build Status](https://travis-ci.org/brandon-barker/angular-scroll-when.svg?branch=master)](https://travis-ci.org/brandon-barker/angular-scroll-when)
+angular-scroll-when 
 ==================
+[![Build Status](https://travis-ci.org/brandon-barker/angular-scroll-when.svg?branch=master)](https://travis-ci.org/brandon-barker/angular-scroll-when)
+[![Dependency Status](https://david-dm.org/brandon-barker/angular-scroll-when.png)](https://david-dm.org/brandon-barker/angular-scroll-when)
 
 An AngularJS directive to dynamically scroll to any element on your page
 
