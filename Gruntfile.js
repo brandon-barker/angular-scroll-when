@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     livereload: 35729,
     src: 'src',
     dist: 'dist',
-	name: 'disqusApi'
+	  name: 'angular-scroll-when'
   };
 
   // Livereload setup
@@ -140,7 +140,7 @@ module.exports = function(grunt) {
         banner: '<%= meta.banner %>'
       },
       dist: {
-        src: ['<%= yo.src %>/<%= yo.name %>.js'],
+        src: ['<%= yo.src %>/{,*/}*.js'],
         dest: '<%= yo.dist %>/<%= yo.name %>.js'
       }
     },
@@ -150,7 +150,7 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['<%= yo.src %>/<%= yo.name %>.js'],
+        src: ['<%= yo.src %>/{,*/}*.js'],
         dest: '<%= yo.dist %>/<%= yo.name %>.js'
       }
     },
@@ -180,7 +180,7 @@ module.exports = function(grunt) {
   grunt.registerTask('release', [
     'test',
     'bump-only',
-    'dist',
+    'build',
     'bump-commit'
   ]);
 
