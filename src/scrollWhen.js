@@ -35,9 +35,9 @@
             var scrollOffset = attrs.scrollOffset || 600;
 
             var $element = $(scrollContainer);
-            var scrollPos = element[0].offsetTop - scrollOffset;
+            var scrollPos = getPosition(element[0]);
 
-            doScroll($element, scrollPos, scrollSpeed);
+            doScroll($element, (scrollPos.y - scrollOffset), scrollSpeed);
           }
         }
 
@@ -46,6 +46,18 @@
           $element.animate({
             scrollTop : scrollPos
           }, scrollSpeed);
+        }
+
+        function getPosition(element) {
+          var x = 0;
+          var y = 0;
+
+          while(element) {
+            x += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+            y += (element.offsetTop - element.scrollTop + element.clientTop);
+            element = element.offsetParent;
+          }
+          return { x: x, y: y };
         }
       }
     }

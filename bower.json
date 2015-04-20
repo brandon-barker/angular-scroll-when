@@ -1,10 +1,10 @@
 {
   "name": "angular-scroll-when",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [
     "Brandon Barker <skinty@gmail.com>"
   ],
-  "description": "A Disqus API wrapper for AngularJS featuring helpful directives for easily adding widgets to your pages",
+  "description": "An AngularJS directive to dynamically scroll to any element on your page",
   "main": "dist/angular-scroll-when.min.js",
   "keywords": [
     "scroll",
