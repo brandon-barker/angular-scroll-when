@@ -1,6 +1,6 @@
 {
   "name": "angular-scroll-when",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "An Angular directive to dynamically scroll to any element on your page",
   "keywords": [
     "angular",

@@ -27,13 +27,26 @@
             var scrollSpeed = attrs.scrollSpeed || 500;
             var scrollOffset = attrs.scrollOffset || 600;
             var $element = $(scrollContainer);
-            var scrollPos = element[0].offsetTop - scrollOffset;
-            doScroll($element, scrollPos, scrollSpeed);
+            var scrollPos = getPosition(element[0]);
+            doScroll($element, scrollPos.y - scrollOffset, scrollSpeed);
           }
         }
         // Scroll to the element
         function doScroll($element, scrollPos, scrollSpeed) {
           $element.animate({ scrollTop: scrollPos }, scrollSpeed);
+        }
+        function getPosition(element) {
+          var x = 0;
+          var y = 0;
+          while (element) {
+            x += element.offsetLeft - element.scrollLeft + element.clientLeft;
+            y += element.offsetTop - element.scrollTop + element.clientTop;
+            element = element.offsetParent;
+          }
+          return {
+            x: x,
+            y: y
+          };
         }
       }
     };
